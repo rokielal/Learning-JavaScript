@@ -1,0 +1,5 @@
+// forEach
+// map
+// filter
+// reduce
+
