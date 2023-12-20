@@ -55,26 +55,26 @@ console.log(rest); // Output: [3, 4, 5]
 
 
 
-// Example 1
-let person = { firstName: 'John', lastName: 'Doe' };
+// // Example 1
+// let person = { firstName: 'John', lastName: 'Doe' };
 
-// Using object destructuring to assign values to variables
-let { firstName, lastName } = person;
+// // Using object destructuring to assign values to variables
+// let { firstName, lastName } = person;
 
-console.log(firstName); // Output: John
-console.log(lastName); // Output: Doe
+// console.log(firstName); // Output: John
+// console.log(lastName); // Output: Doe
 /*In this example, the values of the firstName and lastName properties of the person object are assigned to the variables with the same names. */
 
 //You can also provide default values in case a property is undefined:
 
-// Example 2
-let person = { firstName: 'John' };
+// // Example 2
+// let person = { firstName: 'John' };
 
-// Using object destructuring with default values
-let { firstName, lastName = 'Doe' } = person;
+// // Using object destructuring with default values
+// let { firstName, lastName = 'Doe' } = person;
 
-console.log(firstName); // Output: John
-console.log(lastName); // Output: Doe (default value applied)
+// console.log(firstName); // Output: John
+// console.log(lastName); // Output: Doe (default value applied)
 
 /* In Example 2, if the lastName property is not present in the person object, it will default to 'Doe'. */
 
