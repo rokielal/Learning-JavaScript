@@ -1,6 +1,6 @@
 //Arror functions : Arrow function does not have this instead it takes this from its surrounding (one level above) and we cannot change the this of arrow function
 
-
+    
 const user1 = {
     firstName : "Manoranjan",
     age : 22,

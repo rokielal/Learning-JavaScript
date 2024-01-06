@@ -1,0 +1,1 @@
+// In javascript function is the combo of function and object
