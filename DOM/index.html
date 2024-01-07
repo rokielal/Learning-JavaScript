@@ -5,7 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-   
+    <!-- <script src="./01.js"></script>  -->
+    <!-- it will show error as when browser load js file and at the time of execution of JS code browser will not find any HTML element -->
+
+    <!-- <script src="./01.js" async></script> -->
+    <!-- Here due to async browser will not stop reading(parsing) HTML file and simultanously load the js file but here also there is a chance of getting error because if JS file load completely before reading(parsing) the whole HTML file, reading(parsing) of HTML will stop by the browser and JS code will be executed which may cause error -->
+
+    <!-- <script src="./01.js" defer></script> -->
+    <!-- In case of defer HTML parsing and JS loading will happen simultanously. But here if loading of JS file completed first browser will not stop parsing of HTML element until it gets completed. Once the parsing of HTML completes, browser will start executing the JS code, so it the best way and fast-->
+    <!-- <script src="./02.js" defer></script> -->
+    <!-- <script src="./03.js" defer></script> -->
+    <!-- <script src="./04.js" defer></script> -->
+    <!-- <script src="./05.js" defer></script> -->
+    <!-- <script src="./06.js" defer></script> -->
+    <script src="./07.js" defer></script>
+
+
     <title>My Website</title>
   </head>
   <body>
@@ -75,5 +90,7 @@
         <button type="submit" class="btn signup-btn">Submit</button>
       </form>
     </section>
+    <!-- <script src="./01.js"></script> -->
+    <!-- Here browser will read(parse) all the HTML file first then load and execute the js file but we can improve it further as it might take more time -->
   </body>
 </html>
