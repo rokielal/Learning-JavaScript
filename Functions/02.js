@@ -5,7 +5,7 @@
 //     console.log("I love you");
 // }
 
-// // calling fundtion
+// // calling function
 
 // playSong();
 

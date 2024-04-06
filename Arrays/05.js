@@ -46,7 +46,7 @@
 // }
 
 // for in loop
-// for of loop iterate through the loop and return the index
+// for in loop iterate through the loop and return the index
 const fruits = ["apple", "mango", "grapes"];
 
 for(let index in fruits){

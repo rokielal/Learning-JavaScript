@@ -19,7 +19,7 @@
 // user1.about.call() // undefined undefined
 // user1.about.call(user2); // Soni 21
 
-// // Call method:  The primary benefit of using call is that it allows you to control the value of this explicitly when invoking a function, even if the function is not a method of the specified object. This is particularly useful in scenarios like borrowing methods from other objects or setting the context dynamically.
+// // Call method:  The primary benefit of using call is that it allows us to control the value of this explicitly when invoking a function. Call method is particularly useful in scenarios like borrowing methods from other objects.
 
 // const user3 = {
 //     name: "Ivanshika",
@@ -62,6 +62,11 @@ const user2 = {
     age : 21,
     
 }
+ const user3 = {
+    name: "Ivanshika",
+    age: 2,
 
+ }
 about.call(user1, "football", "mutton"); //Manoranjan 31 football mutton
 about.call(user2, "basketball", "paneer"); //Soni 21 basketball paneer
+about.call(user3, "playing", "cerelac")

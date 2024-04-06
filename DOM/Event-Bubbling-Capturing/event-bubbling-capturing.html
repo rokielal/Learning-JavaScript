@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="./18.js" defer></script>
-    
+    <style>
+      body * {
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid red;
+      }
+    </style>
     <title>Bubbling | Capturing | Delegation</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <h1>Bubbling | Capturing | Delegation</h1>
+    <div>
+      DIV
+      <form>
+        FORM
+
+        <button>BUTTOM</button>
+      </form>
+    </div>
+    <div>Explaining Event Delegation</div>
+    <div class="parent">
+      <a class="profile">Profile</a>
+      <a class="menu">Menu</a>
+      <a class="contact">Contact</a>
+      <a class="social">Social Media</a>
+    </div>
+  </body>
 </html>

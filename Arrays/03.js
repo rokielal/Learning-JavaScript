@@ -33,6 +33,7 @@ Undefined: Represents an uninitialized variable or a variable with no assigned v
 Number: Represents numeric values. It includes integers and floating-point numbers.
 String: Represents sequences of characters enclosed in single or double quotes.
 Symbol: Introduced in ECMAScript 6, symbols are unique and immutable primitive values.
+
 Primitive types are passed by value, meaning that when you assign a primitive value to a variable or pass it as an argument to a function, a copy of the value is created.
 
 */

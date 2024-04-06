@@ -1,4 +1,4 @@
-// bind : In JavaScript, the bind method is used to create a new function that has a specified this value and, optionally, a fixed set of arguments. Unlike call and apply, which immediately invoke the function, bind returns a new function with the specified context and arguments bound to it, allowing you to later invoke it.
+// bind : In JavaScript, the bind method is used to create a new function that has a specified this value and, optionally, a fixed set of arguments. Unlike call and apply, which immediately invoke the function, bind returns a new function with the specified context and arguments bound to it, allowing us to later invoke it.
 
 function about(hobby, favFood) {
     console.log(this.name, this.age, hobby, favFood);
