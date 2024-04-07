@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Oops/style.css" />
     <title>Document</title>
   </head>
   <body>
@@ -89,5 +90,46 @@
 
     <!-- <script src="./Oops/currying.js"></script> -->
     <!-- <script src="./Oops/promises.js"></script> -->
+    <!-- Debouncing Exapmle-->
+
+    <div class="conainter">
+      <div>
+        <p>Debouncing Example</p>
+        <button class="increament_btn">Increament</button>
+        <p>Button pressed <span class="increament_pressed">0</span> times</p>
+        <p>Triggered for <span class="increament_count">0</span> times</p>
+        <p class="content">
+          Here after clicking the on the increament button, button pressed will
+          increase by 1 in every presse but for debouncing if we release the
+          press for 8 ms than triggered count will increase by 1.
+        </p>
+        <h3>
+          Debouncing Example is loading API in search bar after typing and
+          released for some time
+        </h3>
+      </div>
+
+      <hr />
+      <div>
+        <p>Throottling Example</p>
+        <button class="increased_btn">Increament</button>
+        <p>Button pressed <span class="increased_pressed">0</span> times</p>
+        <p>Triggered for <span class="increased_count">0</span> times</p>
+        <p class="content">
+          Here after clicking the on the increament button, button pressed will
+          increase by 1 in every presse but for throttling count will be
+          increased in every 8 ms.
+        </p>
+        <h3>Throttling Example infinite scrolling</h3>
+      </div>
+    </div>
+    <!-- Lodash CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+      integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./Oops/debouncing.js"></script>
   </body>
 </html>
