@@ -31,31 +31,27 @@ const heading10 = document.querySelector(".heading10");
 // six        3s      blue
 // seven      1s      brown
 
-// callback hell  
-// setTimeout(()=>{
+// callback hell
+// setTimeout(() => {
 //   heading1.textContent = "one";
 //   heading1.style.color = "violet";
-//   setTimeout(()=>{
+//   setTimeout(() => {
 //     heading2.textContent = "two";
 //     heading2.style.color = "purple";
-//     setTimeout(()=>{
+//     setTimeout(() => {
 //       heading3.textContent = "three";
 //       heading3.style.color = "red";
-//       setTimeout(()=>{
+//       setTimeout(() => {
 //         heading4.textContent = "four";
 //         heading4.style.color = "pink";
-//         setTimeout(()=>{
+//         setTimeout(() => {
 //           heading5.textContent = "five";
 //           heading5.style.color = "green";
-//         },2000)
-        
-//       },1000)
-      
-//     },2000)
-    
-//   },2000)
-  
-// },1000)
+//         }, 2000);
+//       }, 1000);
+//     }, 2000);
+//   }, 2000);
+// }, 1000);
 
 function changeText(element, text, color, time, onSuccessCallback, onFailureCallback) {
   setTimeout(()=>{
@@ -72,6 +68,7 @@ function changeText(element, text, color, time, onSuccessCallback, onFailureCall
     }
   },time)
 }
+
 // pyramid of doom
 changeText(heading1, "one","violet",1000,()=>{
   changeText(heading2, "two","purple",2000,()=>{
@@ -83,7 +80,7 @@ changeText(heading1, "one","violet",1000,()=>{
               changeText(heading8, "eight","cyan",1000,()=>{
                 changeText(heading9, "nine","#cda562",1000,()=>{
                   changeText(heading10, "ten","dca652",1000,()=>{
-                    
+
                   },()=>{console.log("Heading10 does not exist")})
                 },()=>{console.log("Heading9 does not exist")})
               },()=>{console.log("Heading8 does not exist")})

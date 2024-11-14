@@ -1,0 +1,77 @@
+
+.container {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* border-radius: 25%; */
+}
+
+.click {
+    background-color: tomato;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    letter-spacing: 0.4rem;
+    margin-bottom: 30px;
+}
+
+.click:active {
+    transform: translateY(3px);
+}
+
+.box-container {
+    /* background:gray; */
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-around;
+    transition: 0.6s ease-in-out;
+}
+
+.box-container.big {
+    width: 600px;
+    height: 600px;
+}
+
+.box {
+    background-image: url(https://img.wattpad.com/d38386f3e2b67b398ad41921b9086c408f569de6/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f307370684346316e4f4e70545a773d3d2d3535303630343538322e313532326635373639616364646463323334383531313632353431302e676966);
+
+    background-size: 500px 500px;
+    position: relative;
+    height: 125px;
+    width: 125px;
+    transition: 0.6s ease-in;
+}
+
+.box::after {
+    content: "";
+    background-color: tomato;
+    position: absolute;
+    top: 8px;
+    right: -15px;
+    height: 100%;
+    width: 15px;
+    transform: skewY(45deg);
+}
+
+.box::before {
+    content: "";
+    background-color: tomato;
+    position: absolute;
+    left: 8px;
+    bottom: -15px;
+    width: 100%;
+    height: 15px;
+    transform: skewX(45deg);
+}
+
+.box-container.big .box {
+    transform: rotateZ(360deg);
+}

@@ -1,4 +1,4 @@
-//promise: A Promise in JavaScript is an object that represents the eventual completion or failure of an asynchronous operation and its resulting value. Promises provide a cleaner and more structured way to handle asynchronous code compared to traditional callback-based approaches. 
+//promise: A Promise in JavaScript is an object that represents the eventual completion or failure of an asynchronous operation and its resulting value. Promises provide a cleaner and more structured way to handle asynchronous code compared to traditional callback-based approaches.
 
 /*The Promise object has three states:
 
@@ -30,36 +30,41 @@ Rejected: The operation encountered an error, and the promise has a reason for t
 //     console.log(value);
 // });
 
-// promise will be stored in microtask and it has more priority then callback queue means if in both callback queue and microtask data is there even loop will first run the data of microtask than callback queue
+// promise will be stored in microtask and it has more priority then callback queue means if in both callback queue and microtask queue data is there event loop will first run the data of microtask queue than callback queue
 //example below
 
-console.log("script start!!!!")
-const bucket = ['cofee', 'rice', 'vegetable', 'chips','salt'];
+console.log("script start!!!!");
+const bucket = ["cofee", "rice", "vegetable", "chips", "salt"];
 
 // Produce promise
-const food = new Promise((resolve,reject)=>{
-    if(bucket.includes("rice") && bucket.includes("salt") && bucket.includes("vegetable")){
-        resolve("We can eat");
-    }
-    else{
-        reject("Something is missing, we cannot do it!!!");
-    }
-})
+const food = new Promise((resolve, reject) => {
+  if (
+    bucket.includes("rice") &&
+    bucket.includes("salt") &&
+    bucket.includes("vegetable")
+  ) {
+    resolve("We can eat");
+  } else {
+    reject("Something is missing, we cannot do it!!!");
+  }
+});
 
-setTimeout(()=>{
-    console.log("Hello from set timeout")
-},1000)
+setTimeout(() => {
+  console.log("Hello from set timeout");
+}, 1000);
 
-for(let i=1; i<10; i++){
-    console.log(Math.random(),i);
+for (let i = 1; i < 10; i++) {
+  console.log(Math.random(), i);
 }
 
-food.then((value)=>{
-    console.log(value,"food");
-}).catch((value)=>{
+food
+  .then((value) => {
+    console.log(value, "food");
+  })
+  .catch((value) => {
     console.log(value);
-});
-console.log("script end!!!!")
+  });
+console.log("script end!!!!");
 
 /*
 script start!!!!   (1st it will run)
@@ -79,4 +84,27 @@ script start!!!!   (1st it will run)
  Hello from set timeout
  */
 
- // Diagram attached with promise name
+// Diagram attached with promise name
+
+//  Promise chain
+
+// new Promise(resolve, reject){
+//     setTimeout(()=>{resolve(1)},1000)
+// }
+
+const data = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve(1);
+  }, 1000);
+})
+  .then((result) => {
+    console.log(result);
+    return result * 2;
+  })
+  .then((result) => {
+    console.log(result);
+    return result * 3;
+  })
+  .then((result) => {
+    console.log(result);
+  });

@@ -26,7 +26,7 @@
 // fruits.push("banana");
 // console.log(fruits);
 
-// while loop in array 
+// while loop in array
 // const fruits = ["apple", "mango", "grapes"];
 // const fruits2 = [];
 // let i = 0;
@@ -36,21 +36,19 @@
 // }
 // console.log(fruits2);
 
-
 // for of loop in array
 // for of loop iterate through the loop and return the item
-// const fruits = ["apple", "mango", "grapes"];
+const fruit1 = ["apple", "mango", "grapes"];
 
-// for(let fruit of fruits){
-//     console.log(fruit);
-// }
+for (let fruit of fruit1) {
+  console.log(fruit);
+}
 
 // for in loop
 // for in loop iterate through the loop and return the index
-const fruits = ["apple", "mango", "grapes"];
+const fruits = ["banana", "orange", "pineapple"];
 
-for(let index in fruits){
-    // console.log(index); // it will give index
-    console.log(fruits[index]); //  it will give elements
+for (let index in fruits) {
+  console.log(index); // it will give index
+  console.log(fruits[index]); //  it will give elements
 }
-

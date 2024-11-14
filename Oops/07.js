@@ -71,7 +71,7 @@ console.log(obj2); //{key3: 'value3'}
 console.log(obj2.key2); //value2 --> here in obj2 key2 is not present but due to __proto__ js will check for key2 in obj1 and if there key2 is present that it will print it.
 
 // ------------------------------------
-// By using __prot__ we can solve the problem to pass all methods in the function as reference by creating object using Object.create and setting its __proto__ to userMethods
+// By using __proto__ we can solve the problem to pass all methods in the function as reference by creating object using Object.create and setting its __proto__ to userMethods
 
 const userMethods = {
   about: function () {

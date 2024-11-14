@@ -20,10 +20,10 @@
 
 // let myNumber = BigInt(123);
 // let sameNumber = 12n
-// console.log(myNumber + sameNumber);
+// console.log(myNumber + sameNumber); //135n
 
 // we can perform arthimatic operation in BigInt condition both the numbers must be of type BigInt
 
-let myNumber = 123; 
-let sameNumber = 12n
-console.log(myNumber + sameNumber); // error Cannot mix BigInt and other types, use explicit conversions
+// let myNumber = 123; 
+// let sameNumber = 12n
+// console.log(myNumber + sameNumber); // error Cannot mix BigInt and other types, use explicit conversions
