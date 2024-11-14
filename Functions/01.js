@@ -70,7 +70,7 @@
 //     }
 //     return -1;
 // }
-
+ 
 // const myArr = [2,3,6,8,67];
 // const myTarget = 6;
 
