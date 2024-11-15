@@ -1,3 +1,7 @@
+// Ques 1: Create a button UI and debounce as follows =>
+        // Show button pressed X times, every time button is pressed
+        // Show button triggered Y times, count after 800ms of debounce
+
 const btn = document.querySelector(".increament_btn");
 const btnPress = document.querySelector(".increament_pressed");
 const count = document.querySelector(".increament_count");

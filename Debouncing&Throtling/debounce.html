@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debouncing and Throttling</title>
+  </head>
+  <body>
+    <div class="conainter">
+      <h3 style="color: red">
+        Debouncing and throttling are techniques in JavaScript used to control
+        how often a function is executed, especially in response to frequent
+        events such as scrolling, resizing, or keypresses. They are particularly
+        useful for improving performance and user experience.
+      </h3>
+      <hr />
+      <div>
+        <h3>
+          Definition: Debouncing ensures that a function is executed only after
+          a specified delay has elapsed since the last time it was invoked. It
+          prevents a function from being called repeatedly in quick succession.
+        </h3>
+        <h3>Debouncing Example</h3>
+        <button class="increament_btn">Increament</button>
+        <p>Button pressed <span class="increament_pressed">0</span> times</p>
+        <p>Triggered for <span class="increament_count">0</span> times</p>
+        <p class="content">
+          Here after clicking the on the increament button, button pressed will
+          increase by 1 in every presse but for debouncing if we release the
+          press for 8 ms than triggered count will increase by 1.
+        </p>
+        <h3>
+          Use Case:
+          <p>
+            1- Search bar suggestions (wait for the user to stop typing before
+            making a search query).
+          </p>
+          <p>
+            2- Resize event handling (trigger logic only after resizing is
+            finished).
+          </p>
+        </h3>
+      </div>
+
+      <hr />
+      <div>
+        <h3>
+          Definition: Throttling ensures that a function is executed at most
+          once every specified interval, even if the event is triggered multiple
+          times during that interval.
+        </h3>
+        <p>Throottling Example</p>
+        <button class="increased_btn">Increament</button>
+        <p>Button pressed <span class="increased_pressed">0</span> times</p>
+        <p>Triggered for <span class="increased_count">0</span> times</p>
+        <p class="content">
+          Here after clicking the on the increament button, button pressed will
+          increase by 1 in every presse but for throttling count will be
+          increased in every 8 ms.
+        </p>
+      </div>
+      <h3>
+        Use Case:
+        <p>
+          1- Scroll event handling (execute a function at regular intervals
+          during scrolling).
+        </p>
+        <p>2- Button click prevention to avoid rapid, repeated submissions.</p>
+      </h3>
+
+      <h1 class="center">Make me in center</h1>
+    </div>
+
+    <!-- Lodash CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+      integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./debounce.js"></script>
+  </body>
+</html>
